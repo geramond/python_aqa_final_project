@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.idea/
+.DS_Store
+
+# my_project
+allure-report/
+allure-results/
+cm
+drivers/
+*auth.py
+linux/param_iko/ssh_auth.py
+screenshot
+opencart_ui_tests/tests/test_fail_example.py
