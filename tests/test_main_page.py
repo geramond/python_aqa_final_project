@@ -88,7 +88,7 @@ def test_success_message_after_add_featured_product_to_cart_and_increase_cart_to
         - after adding product to cart, 'total items' == 1, 'cart price' > 0.
         - if product has NO required fields, it can be added to cart from 'Main page' immediately
         - if product has required fields, user redirected to product page
-        """
+    """
 
     main_page = MainPage(browser=browser, base_url=base_url)
     main_page.open()
