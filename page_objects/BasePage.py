@@ -35,6 +35,7 @@ class BasePage:
     @allure.step("Searching: {locator}")
     def get_element_if_present(self, locator, only_first=False):
         """Returns element or elements list if found"""
+
         element_list = self.browser.find_elements(*locator)
         if only_first:
             LOGGER.debug(f"FOUND! Return only first element: '{locator}' ")
@@ -151,9 +152,6 @@ class BasePage:
         cart_text_split = cart_text.split(" item(s) - $")
         items_in_cart, total_price = int(cart_text_split[0]), float(cart_text_split[1])
         return items_in_cart, total_price
-
-
-
 
     @allure.step("Verify link presence")
     def _verify_link_presence(self, link_text):

@@ -1,5 +1,4 @@
 import random
-from selenium.webdriver.common.by import By
 
 CONFIG = {
     "main":
@@ -21,10 +20,6 @@ CONFIG = {
          },
     "category": "Categories"
 }
-
-TIMEOUT = 3
-CURRENCY_DROPDOWN_STATE = "area-expanded"
-CURRENCY_SIGNS = {"USD": "$", "EUR": "€", "GBP": "£"}
 
 
 def random_int(): return random.randint(1, 30000)
